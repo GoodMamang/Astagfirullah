@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis Investigatif PMII - Dinsos Kota Tasikmalaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Crimson Pro', serif;
+            background-color: #0a0a0a;
+            color: #dc2626;
+        }
+        .font-sans-custom {
+            font-family: 'Inter', sans-serif;
+        }
+        .a4-page {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 1 / 1.414;
+            position: relative;
+            overflow: hidden;
+            background-color: #000;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .grain-overlay {
+            position: absolute;
+            inset: 0;
+            opacity: 0.05;
+            background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
+            pointer-events: none;
+        }
+        .blood-border {
+            border: 12px solid #450a0a;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .a4-page { margin: 0; box-shadow: none; page-break-after: always; }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center p-4 md:p-10">
+
+    <!-- HALAMAN 1: COVER -->
+    <section class="a4-page blood-border p-8 md:p-16">
+        <div class="grain-overlay"></div>
+        
+        <!-- Logo PMII -->
+        <div class="flex justify-center mb-8 relative z-10">
+            <img 
+                src="https://blogger.googleusercontent.com/img/a/AVvXsEgQQW6S_rJBjt8LnCRp_i3UUJLnTWfU8LgApydZ2idmn42EGenrKdNQSraFXQc1tAqHv1tyABZkGCYSWawGo5GZsVzi_eeJvB_mhl3ROES7ywWtxjfsqE9TwUbU83eRfVNCGYwfxL5nGca_q4a74-HYUp3HOXbXgcZIrZNWXBIM4pGYeieYaYg8p-eI" 
+                class="w-32 h-auto drop-shadow-[0_0_20px_rgba(220,38,38,0.5)]" 
+                alt="Logo PMII"
+            >
+        </div>
+
+        <div class="text-center relative z-10 flex-1 flex flex-col justify-center">
+            <p class="text-xl font-bold tracking-[0.4em] text-red-900 mb-4 uppercase">Laporan Investigasi Anggaran</p>
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-6 uppercase">
+                ANGGARAN <span class="text-white block">HANTU</span> DINSOS
+            </h1>
+            <div class="h-2 bg-red-700 w-32 mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-lg uppercase tracking-widest font-bold font-sans-custom">PC PMII KOTA TASIKMALAYA</p>
+        </div>
+
+        <div class="mt-auto border-t-2 border-red-900 pt-8 relative z-10">
+            <div class="flex justify-between items-end">
+                <div>
+                    <p class="text-xs text-zinc-500 uppercase font-bold tracking-tighter font-sans-custom">Akumulasi Dana Terhutang:</p>
+                    <p class="text-4xl md:text-5xl font-black text-red-600">Rp 1.978.944.705</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-[10px] text-zinc-600 uppercase font-sans-custom">Tahun Anggaran</p>
+                    <p class="text-2xl font-bold text-zinc-300">2026</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Skull Icon Decor -->
+        <div class="absolute -right-20 -top-20 opacity-5 rotate-12 pointer-events-none">
+            <svg width="400" height="400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 0 0-5 5v3.5a1 1 0 0 1-1 1A3.5 3.5 0 0 0 2.5 15C2.5 17 4 18.5 6 18.5a1 1 0 0 1 1 1V21a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1.5a1 1 0 0 1 1-1c2 0 3.5-1.5 3.5-3.5a3.5 3.5 0 0 0-3.5-3.5 1 1 0 0 1-1-1V7a5 5 0 0 0-5-5M9 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2m6 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2M8 18h8v2H8z"/></svg>
+        </div>
+    </section>
+
+    <!-- HALAMAN 2: DATA BREAKDOWN -->
+    <section class="a4-page bg-zinc-950 border-x border-red-900/30 p-8 md:p-12 shadow-2xl">
+        <div class="flex items-center gap-4 border-b-2 border-red-700 pb-4 mb-8">
+            <svg class="text-red-600 w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+            <h2 class="text-2xl font-black uppercase">Detail Paket Penyedia</h2>
+        </div>
+
+        <div class="space-y-6 flex-1 overflow-y-auto">
+            <!-- Paket 1 -->
+            <div class="bg-neutral-900/50 border border-zinc-800 p-5 rounded-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-red-800 text-black px-3 py-1 font-black text-xs font-sans-custom uppercase">Paket #1</span>
+                    <span class="text-zinc-500 text-[10px] font-mono tracking-tighter">RUP ID: 66472376</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="md:col-span-2">
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">MAK (Kode Rekening):</label>
+                        <p class="text-[11px] font-mono text-zinc-400 bg-black p-2 border border-zinc-800 break-all">1.06.04.2.01.0003.5.1.02.01.001.00039</p>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">Nilai Pagu:</label>
+                        <p class="text-xl font-black text-red-500">Rp 743.538.600</p>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">Metode Pemilihan:</label>
+                        <p class="text-sm font-bold text-zinc-200">Pengadaan Langsung</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket 2 -->
+            <div class="bg-neutral-900/50 border border-zinc-800 p-5 rounded-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-red-800 text-black px-3 py-1 font-black text-xs font-sans-custom uppercase">Paket #2</span>
+                    <span class="text-zinc-500 text-[10px] font-mono tracking-tighter">RUP ID: 66472252</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="md:col-span-2">
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">MAK (Kode Rekening):</label>
+                        <p class="text-[11px] font-mono text-zinc-400 bg-black p-2 border border-zinc-800 break-all">1.06.04.2.01.0001.5.1.02.01.001.00039</p>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">Nilai Pagu:</label>
+                        <p class="text-xl font-black text-red-500">Rp 783.420.900</p>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">Metode Pemilihan:</label>
+                        <p class="text-sm font-bold text-zinc-200">Pengadaan Langsung</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="bg-neutral-900/50 border border-zinc-800 p-5 rounded-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-red-800 text-black px-3 py-1 font-black text-xs font-sans-custom uppercase">Paket #3</span>
+                    <span class="text-zinc-500 text-[10px] font-mono tracking-tighter">RUP ID: 66472446</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="md:col-span-2">
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">MAK (Kode Rekening):</label>
+                        <p class="text-[11px] font-mono text-zinc-400 bg-black p-2 border border-zinc-800 break-all">1.06.04.2.02.0003.5.1.02.01.001.00039</p>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">Nilai Pagu:</label>
+                        <p class="text-xl font-black text-red-500">Rp 451.985.205</p>
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-zinc-600 uppercase font-bold block font-sans-custom">Metode Pemilihan:</label>
+                        <p class="text-sm font-bold text-zinc-200">Pengadaan Langsung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 p-6 bg-red-950/20 border-l-4 border-red-600">
+            <h4 class="text-sm font-black uppercase text-red-500 tracking-widest mb-3 font-sans-custom tracking-tighter italic">Rincian Teknis Kolektif</h4>
+            <div class="grid grid-cols-2 gap-y-2 text-[10px] font-sans-custom uppercase font-bold text-zinc-400">
+                <div class="flex items-center gap-2">● Satker: Dinas Sosial</div>
+                <div class="flex items-center gap-2">● Lokasi: Kota Tasikmalaya</div>
+                <div class="flex items-center gap-2">● Jadwal: Maret 2026</div>
+                <div class="flex items-center gap-2">● Sumber: APBDP</div>
+                <div class="flex items-center gap-2">● PDN: Ya</div>
+                <div class="flex items-center gap-2 text-red-700 underline">● SPP Berkelanjutan: Tidak</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN 3: ANALYSIS -->
+    <section class="a4-page border-4 border-red-900 p-8 md:p-12 shadow-2xl">
+        <div class="flex items-center gap-4 border-b-2 border-red-700 pb-4 mb-10">
+            <svg class="text-red-600 w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <h2 class="text-2xl font-black uppercase">Analisis & Tuntutan</h2>
+        </div>
+
+        <div class="flex-1 space-y-10">
+            <div class="space-y-8">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-red-700">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-black text-zinc-100 uppercase mb-1">Skema Pengadaan Langsung</h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed font-sans-custom">Total akumulasi hampir 2 Milyar Rupiah dipecah menjadi 3 paket dengan metode 'Pengadaan Langsung'. PMII mencurigai adanya upaya sengaja untuk menghindari proses Tender terbuka dan kompetitif.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-red-700">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.047a1 1 0 00-1.1 0l-7 4.666A1 1 0 002.5 6.5v6.222a1 1 0 00.5 1.048l7 4.666a1 1 0 001.1 0l7-4.666a1 1 0 00.5-1.048V6.5a1 1 0 00-.5-1.048l-7-4.666z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-black text-zinc-100 uppercase mb-1">Kegagalan Manajerial Masa Lalu</h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed font-sans-custom">Pembayaran pekerjaan tahun sebelumnya membuktikan adanya kegagalan perencanaan yang fatal. Siapa oknum yang bertanggung jawab atas keterlambatan pembayaran ini sehingga membebani APBD 2026?</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-red-700">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-black text-zinc-100 uppercase mb-1">Urgensi Pencairan Kilat</h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed font-sans-custom">Seluruh paket direncanakan cair serentak pada Maret 2026. PMII menuntut transparansi: Mengapa dana sebesar ini harus keluar begitu cepat tanpa pengawasan publik yang ketat?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-red-700 p-8 text-black text-center relative shadow-[0_0_30px_rgba(220,38,38,0.3)] border-2 border-black">
+                <h3 class="text-3xl font-black uppercase mb-2">AUDIT INVESTIGATIF!</h3>
+                <p class="font-bold text-sm uppercase tracking-widest font-sans-custom">PC PMII Kota Tasikmalaya menuntut transparansi penuh atas aliran dana Rp 1,97 Miliar ini.</p>
+            </div>
+        </div>
+
+        <footer class="mt-auto pt-10 text-center relative z-10">
+            <img 
+                src="https://blogger.googleusercontent.com/img/a/AVvXsEgQQW6S_rJBjt8LnCRp_i3UUJLnTWfU8LgApydZ2idmn42EGenrKdNQSraFXQc1tAqHv1tyABZkGCYSWawGo5GZsVzi_eeJvB_mhl3ROES7ywWtxjfsqE9TwUbU83eRfVNCGYwfxL5nGca_q4a74-HYUp3HOXbXgcZIrZNWXBIM4pGYeieYaYg8p-eI" 
+                class="w-16 h-auto mx-auto mb-4 opacity-50 grayscale" 
+                alt="Logo PMII"
+            >
+            <p class="text-[10px] text-zinc-700 uppercase font-black tracking-[0.5em] font-sans-custom">Tangan Terkepal Dan Maju Ke Muka</p>
+            <p class="text-[8px] text-zinc-800 mt-2 font-sans-custom">Dokumen Advokasi Publik - PC PMII Kota Tasikmalaya</p>
+        </footer>
+    </section>
+
+</body>
+</html>
